@@ -1,0 +1,6 @@
+HUONG DAN CHAY CHUONG TRINH.
+
+Mở cmd terminal.
+B1: Trỏ đến đường dẫn chứa code: Gõ cd Desktop\SA
+B2: gõ lệnh: python app.py
+B3: Mở đường dẫn : http://127.0.0.1:5000/ trên web để chạy

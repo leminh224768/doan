@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Phân tích kết quả</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/results.css">
+		     <script src="../static/jquery-2.0.3.min.js"></script>
+		
+		<style>
+			.tg  {border-collapse:collapse;border-spacing:0;}
+			.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+			  overflow:hidden;padding:10px 5px;word-break:normal;}
+			.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+			  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+			.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+			.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+			.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+			.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+			.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+			.button {
+				  background-color: #4CAF50;
+				  border: none;
+				  color: white;
+				  position: absolute;
+				  right: 0;
+				  text-align: center;
+				  display: inline-block;
+				  font-size: 16px;
+				  margin: 4px 2px;
+				  cursor: pointer;
+			}
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #23a9bb;
+			  align: center;
+			}
+
+			li {
+				  float:left;
+				  margin-right: 210px;
+				  margin-left: 210px;
+			}
+
+			li a {
+			  display: inline-block;
+			  color: #124046;
+			  font-size:20px;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  float: none;
+
+			}
+
+			li a:hover {
+			  background-color: #3f85c1;
+			}
+			 body {
+            font-family: 'Fira Sans', sans-serif;
+            background-image: url("../static/bg.png");
+           
+        }
+		</style>
+	
+	
+		<nav class="navbar navbar-dark bg-primary justify-content-center">
+			<h3 class="text-white" align="center" style = "font-size:38px">ỨNG DỤNG PHÂN TÍCH Ý KIẾN BẰNG PHƯƠNG PHÁP HỌC MÁY</h3>
+		</nav>
+		<ul>
+		<li><a href="/"><strong>Phân tích bình luận</strong></a></li>
+		<li><a href="/dulieu"><strong>Thông tin dữ liệu</strong></a></li>
+		</ul>
+		
+    </head>
+
+    <body>
+            <div class="col-xs-8 col-xs-offset-2">
+                <h2 class="text-muted" color="blue" align="center"><strong>THÔNG TIN KẾT QUẢ THỰC NGHIỆM</strong></h2>		
+				<h5 class="text-muted" color="green" align="center"><strong> KẾT QUẢ MÔ HÌNH TRÊN BỘ DỮ LIỆU UIT FEEDBACK</strong></h5>		
+				
+				<table class="tg" align="center">
+				<thead>
+				  <tr>
+					<th class="tg-fymr">Phương pháp</th>
+					<th class="tg-fymr">Độ chính xác</th>
+					<th class="tg-fymr">Độ phủ</th>
+					<th class="tg-fymr">Chỉ số F1</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td class="tg-0pky">Random Forest</td>
+					<td class="tg-c3ow">83.60</td>
+					<td class="tg-c3ow">84.71</td>
+					<td class="tg-c3ow">83.41</td>
+				  </tr>
+				  <tr>
+					<td class="tg-0pky">Naive Bayes</td>
+					<td class="tg-c3ow">82.05</td>
+					<td class="tg-c3ow">86.44</td>
+					<td class="tg-c3ow">84.13</td>
+				  </tr>
+				  <tr>
+					<td class="tg-1wig">Support Vector Machine</td>
+					<td class="tg-amwm">87.91</td>
+					<td class="tg-amwm">88.62</td>
+					<td class="tg-amwm">87.35</td>
+				  </tr>
+				</tbody>
+				</table>
+				
+				<br></br>
+				<br></br>
+				<h5 class="text-muted" color="green" align="center"><strong> Biểu đồ 2: So sánh kết quả của các phương pháp thử nghiệm.</strong></h5>		
+				<nav class="navbar navbar-dark bg-primary justify-content-center">
+					 <div class = "img-container2"> <img style='height: 100%; width: 100%;' src="{{url_for('static', filename='ketqua.png')}}" /></div>
+				</nav>
+				
+                <p>&nbsp;</p>
+            <p>&nbsp;</p>
+           		
+
+            </div>
+           		
+		</div>
+        </div>
+    </body>
+     <p>&nbsp;</p>
+            <p>&nbsp;</p>	
+</html>
